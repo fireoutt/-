@@ -2,25 +2,25 @@
 
 koloda = [6, 7, 8, 9, 10, 11, 2, 3, 4] * 4
 import random
-random.shuffle(koloda)
+random.shuffle(koloda)      
 
-print('ставлю душу своей матери')
+print('bet my mothers soul')
 count = 0
 
 while True:
-    choice = input('берешь карту?')
+    choice = input('take card?')
     if choice == 'da':
         current = koloda.pop()
-        print('ваша карта %d' % current)
+        print('your card %d' % current)
         count += current
         if count > 21:
-            print('АНЛАК)))')
+            print('UNLUCK)))')
             break
         elif count == 21:
-            print('очко')
+            print('ochko')
             break
         else:
-            print('ровно %d птс' % count)
+            print('equal %d pts' % count)
     elif choice == 'n':
-        print('ваш птс это %d счет закончен' % count)
+        print('your pts is $d count is ended' % count)
         break
